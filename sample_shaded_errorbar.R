@@ -27,25 +27,25 @@ print(p)
 
 
 ## example) number of predictor = 3   --------
-source( "/Users/Yuta-PC/Documents/Rscript/clearFunc.R" )
-clearAll()
-
-source("/Users/Yuta-PC/Documents/Rscript/shaded_error/shaded_errorbar.R")
-require("R.matlab")
-library(ggsci)
-
-PLRdata <- readMat('/Users/Yuta-PC/Documents/matlab/Insight/hiddenPictureAnalysis6.3.0/datashow/data5.mat')
-g <- c("NR->R","NR->NR",'R->R')
-d <- makeDataSet(PLRdata,g)
-
-config <- list(lim_x = c(-0.2, 3),
-               lim_y = c(-0.5, 8),
-               alpha = 0.3,
-               label_x = "Time [s]",
-               label_y = "Pupil Changes [%]",
-               gr = c("#ECB01F","#F8766D","#619CFF"),
-               gr_point = c("#F8766D","#ECB01F","#619CFF")
-)
-p <- disp(d,config,1)
-print(p)
+# source( "/Users/Yuta-PC/Documents/Rscript/clearFunc.R" )
+# clearAll()
+# 
+# source("/Users/Yuta-PC/Documents/Rscript/shaded_error/shaded_errorbar.R")
+# require("R.matlab")
+# library(ggsci)
+# 
+# PLRdata <- readMat('/Users/Yuta-PC/Documents/matlab/Insight/hiddenPictureAnalysis6.3.0/datashow/data5.mat')
+# g <- c("NR->R","NR->NR",'R->R')
+# d <- makeDataSet(PLRdata,g)
+# 
+# config <- list(lim_x = c(-0.2, 3),
+#                lim_y = c(-0.5, 8),
+#                alpha = 0.3,
+#                label_x = "Time [s]",
+#                label_y = "Pupil Changes [%]",
+#                gr = c("#ECB01F","#F8766D","#619CFF"),
+#                gr_point = c("#F8766D","#ECB01F","#619CFF")
+# )
+# p <- disp(d,config,1)
+# print(p)
 ##------------------------------------------
